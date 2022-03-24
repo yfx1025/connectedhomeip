@@ -1480,14 +1480,13 @@ public:
     virtual void Release() = 0;
 };
 
-
 /**
  *  @brief Fabric index - P256 Key Mapping.
  **/
 struct FabricP256KeyMap_t
 {
     FabricIndex fabricIdx;
-    P256Keypair *pkey;
+    P256Keypair * pkey;
 };
 
 /**
@@ -1508,7 +1507,7 @@ public:
      * @brief Confirm operational key for the fabric. To be called on successful AddNOC / UpdateNOC command
      * @return Return - CHIP_ERROR
      **/
-    virtual CHIP_ERROR ConfirmP256KeyPairForOperationalKey(FabricIndex fabricIdx, P256Keypair* p256key) = 0;
+    virtual CHIP_ERROR ConfirmP256KeyPairForOperationalKey(FabricIndex fabricIdx, P256Keypair * p256key) = 0;
 
     /**
      * Get last valid Operational Key for fabric. To be called on ArmFailSafe timer expire before commissioning complete.
@@ -1526,7 +1525,7 @@ public:
      * @brief Free P256 KeyPair.
      * @return None
      **/
-    virtual void FreeP256KeyPair(P256Keypair* p256key) = 0;
+    virtual void FreeP256KeyPair(P256Keypair * p256key) = 0;
 
 private:
     /**
