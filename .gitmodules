@@ -196,4 +196,7 @@
 [submodule "third_party/bouffalolab/bl602"]
 	path = third_party/bouffalolab/bl602_sdk/repo
 	url = https://github.com/bouffalolab/bl_iot_sdk_matter.git
-	branch = gebx/rebase-to-ee7682d5
+	branch = bl602_release
+[submodule "third_party/telink_sdk/repo"]
+	path = third_party/telink_sdk/repo
+	url = https://github.com/rikorsev/telink_b91_ble_sdk
